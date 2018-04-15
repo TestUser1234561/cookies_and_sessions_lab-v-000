@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   def add
     @cart = []
     @cart << params[:product]
-    @cart = session[:cart]
+    session[:cart]
     render :index
   end
 end
